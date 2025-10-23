@@ -12,7 +12,8 @@ function App() {
         <Nav />
         <Routes>
           <Route path='/' element={<ItemListContainer />} />
-          <Route path='/detail/:id' element={<ItemDetailContainer />} />  
+          <Route path='/detail/:id' element={<ItemDetailContainer />} /> 
+           <Route path="/category/:category" element={<ItemListContainer titulo="Categoría" />} /> 
         </Routes>
       </CartProvider>
     </BrowserRouter>

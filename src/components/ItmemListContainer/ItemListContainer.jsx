@@ -30,11 +30,15 @@ export const ItemListContainer = ({ titulo }) => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [category]);
+
+  const tituloFinal = category
+    ? `${titulo}: ${category.charAt(0).toUpperCase() + category.slice(1)}`
+    : titulo;
 
   return (
     <section>
-      <h1>{titulo}</h1>
+       <h1>{tituloFinal}</h1>
       <ItemList list={products} />
     </section>
   );
