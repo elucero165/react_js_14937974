@@ -1,0 +1,9 @@
+/* Contenedor general de los productos */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centra horizontalmente */
+  align-items: flex-start;
+  gap: 1.5rem; /* espacio entre productos */
+  padding: 2rem 0;
+}

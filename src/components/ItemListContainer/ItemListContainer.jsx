@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ItemList } from "../ItemList/ItemList";
+import './ItemListContainer.css';
 
 export const ItemListContainer = ({ titulo }) => {
   const [products, setProducts] = useState([]);
@@ -37,8 +38,8 @@ export const ItemListContainer = ({ titulo }) => {
     : titulo;
 
   return (
-    <section>
-       <h1>{tituloFinal}</h1>
+    <section className="product-list">
+       <h2>{tituloFinal}</h2>
       <ItemList list={products} />
     </section>
   );
