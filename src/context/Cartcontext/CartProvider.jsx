@@ -23,17 +23,17 @@ export const CartProvider = ({ children }) => {
     }
 
     //solo si no se acumulan en el carrito los articulos repetidos
-    const getTotalItems=()=>{
+    const getTotalItems = () => {
         if(cart.length){
             return cart.length;
         }
-    }
+    };
 
     const values={
         cart, addItem, clearCart,getTotalItems
-    }
+    };
     
 
-    return <CartContext.Provider value={{values}}>{children}</CartContext.Provider>;
+    return <CartContext.Provider value={values}>{children}</CartContext.Provider>;
 };
  
