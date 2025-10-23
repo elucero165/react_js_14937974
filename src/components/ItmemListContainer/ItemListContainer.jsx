@@ -22,8 +22,6 @@ export const ItemListContainer = ({ titulo }) => {
         if(category){
           console.log("🔍 Filtrando por categoría:", category);
           const filteredProducts = data.filter((product) => product.category.toLowerCase() === category.toLowerCase());
-          //console.log(`Comparando: "${product.category}" === "${category}"`, product.category === category);
-          //console.log("Comparando:", data[0].category, "===", category);
           setProducts(filteredProducts);
         }else{
           setProducts(data);
