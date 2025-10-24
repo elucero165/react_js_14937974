@@ -6,7 +6,7 @@ export const Nav = () => {
   const {getTotalItems}= useCartContext();
   return (
     <nav className="navbar">
-      <h1 className="logo">Sweet & Salty 🍭</h1>
+      <h1 className="logo">Fusión Snack Bar 🍭</h1>
       <ul className="nav-links">
         <li>
           <Link to={"/"}>Home</Link>
