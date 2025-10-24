@@ -40,6 +40,7 @@
   align-items: center;
   padding: 20px;
   /*min-height: calc(100vh - 80px); /* Ajusta según la altura de tu navbar */
+  
   background: linear-gradient(135deg, #ecebeb 0%, #575555 100%);
   border-radius: 1rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);

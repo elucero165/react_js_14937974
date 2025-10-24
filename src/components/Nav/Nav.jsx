@@ -6,7 +6,7 @@ export const Nav = () => {
   const {getTotalItems}= useCartContext();
   return (
     <nav className="navbar">
-      <h1 className="logo">Fusión Snack Bar 🍭</h1>
+      <h1 className="logo">Fusión Snack Bar</h1>
       <ul className="nav-links">
         <li>
           <Link to={"/"}>Home</Link>
@@ -18,7 +18,7 @@ export const Nav = () => {
           <Link to={"/category/salado"}>Salado</Link>
         </li>
         <li className="nav-links">
-          <Link>🛒 Carrito</Link>
+          <Link to="/cart">🛒</Link>
           {getTotalItems() > 0 && (
             <span className="in-cart">{getTotalItems()}</span>
           )}
