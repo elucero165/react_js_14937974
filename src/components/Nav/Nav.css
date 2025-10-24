@@ -72,7 +72,7 @@ nav ul li:last-child {
   align-items: center;
   background: linear-gradient(90deg, #1a1a1a 0%, #2c2c2c 100%);
   padding: 1rem 2rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5);*/
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -110,6 +110,7 @@ nav ul li:last-child {
 .nav-links li a:hover {
   color: #ffcc66;
   transform: scale(1.05);
+  
 }
 
 /* 🛒 Contenedor del carrito */
