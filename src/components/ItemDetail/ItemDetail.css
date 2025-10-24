@@ -1,0 +1,46 @@
+/* 🔘 Botón base */
+.btn {
+  background-color: #ffcc66;
+  color: #1e1e1e;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* ✨ Efecto al pasar el mouse */
+.btn:hover {
+  background-color: #ffd480;
+  transform: scale(1.07);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* 💥 Versión específica para "Agregar al carrito" */
+.btn-add {
+  margin-top: 1rem;
+  font-size: 1rem;
+  letter-spacing: 0.3px;
+}
+/*
+.item-detail {
+  padding: 2rem;
+  background: linear-gradient(135deg, #1b1b1b 0%, #2a2a2a 100%);
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+*/
+
+.item-detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /*min-height: calc(100vh - 80px); /* Ajusta según la altura de tu navbar */
+  background: linear-gradient(135deg, #ecebeb 0%, #575555 100%);
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}

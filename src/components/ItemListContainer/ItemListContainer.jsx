@@ -38,8 +38,8 @@ export const ItemListContainer = ({ titulo }) => {
     : titulo;
 
   return (
-    <section className="product-list">
-       <h2>{tituloFinal}</h2>
+    <section className="item-list-container">
+      <h2 className="page-title">{tituloFinal}</h2>
       <ItemList list={products} />
     </section>
   );
