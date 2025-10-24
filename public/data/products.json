@@ -22,5 +22,21 @@
     "price": 1200,
     "description": "Hojaldre 100% manteca, crujiente por fuera y tierno por dentro.",
     "imageUrl": "/images/croissant.jpg"
+  },
+  {
+    "id": "4",
+    "name": "Chipa",
+    "category": "salado",
+    "price": 800,
+    "description": "Harina de mandioca , relleno con queso parmesano, tiernos sabrosos con mucho relleno.",
+    "imageUrl": "/images/chipa.jpg"
+  },
+  {
+    "id": "5",
+    "name": "Berenjenas rellenas",
+    "category": "salado",
+    "price": 3800,
+    "description": "Fritas rebozadas en harina, rellenas de queso fresco y jamon cosido, delicioso!",
+    "imageUrl": "/images/Berenjena.jpg"
   }
 ]
