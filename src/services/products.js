@@ -14,5 +14,5 @@ export const createProduct = async (product) => {
   }
 
   const result = await res.json();
-  return result;
+  return result;//
 };
