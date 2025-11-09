@@ -1,4 +1,6 @@
-const BASE_URL = "https://6900bc2cff8d792314bb3770.mockapi.io/products";
+//const BASE_URL = "https://6900bc2cff8d792314bb3770.mockapi.io/products";
+const BASE_URL = "https://6900bbabff8d792314bb331a.mockapi.io/products"; //mi cuenta
+
 
 export const createProduct = async (product) => {
   const res = await fetch(BASE_URL, {
