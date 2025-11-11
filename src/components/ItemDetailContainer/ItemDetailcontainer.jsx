@@ -10,7 +10,8 @@ export const ItemDetailContainer = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch("/data/products.json")
+    //fetch("/data/products.json")
+    fetch("https://6900bbabff8d792314bb331a.mockapi.io/products")
       .then((res) => {
         if (!res.ok) {
           throw new Error("No se encontro el producto");

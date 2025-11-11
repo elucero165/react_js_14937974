@@ -10,7 +10,8 @@ export const ItemListContainer = ({ titulo }) => {
   useEffect(() => {
     setProducts([]); 
     //https://6900bbabff8d792314bb331a.mockapi.io/:endpoint
-    fetch("/data/products.json")
+    //fetch("/data/products.json")
+    fetch("https://6900bbabff8d792314bb331a.mockapi.io/products")
       //setProducts([]);
       .then((res) => {
         if (!res.ok) {
