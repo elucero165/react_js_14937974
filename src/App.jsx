@@ -30,7 +30,7 @@ function App() {
                 element={<ItemListContainer titulo={"Bienvenidos"} />}
               />
               <Route path="/detail/:id" element={<ItemDetailContainer />} />
-              <Route path="/carrito" element={<Cart />} />
+              <Route path="/cart" element={<Cart />} />
             </Route>
             <Route path="/admin" element={<AdminLayout/>}>
               <Route index element = {<Login />}/>
