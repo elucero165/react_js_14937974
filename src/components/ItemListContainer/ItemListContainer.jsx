@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ItemList } from "../ItemList/ItemList";
 import './ItemListContainer.css';
+import { getProducts } from "../../services/products";
 
 export const ItemListContainer = ({ titulo }) => {
   const [products, setProducts] = useState([]);
@@ -11,6 +12,7 @@ export const ItemListContainer = ({ titulo }) => {
     setProducts([]); 
     //https://6900bbabff8d792314bb331a.mockapi.io/:endpoint
     //fetch("/data/products.json")
+    /*
     fetch("https://6900bbabff8d792314bb331a.mockapi.io/products")
       //setProducts([]);
       .then((res) => {
@@ -28,7 +30,9 @@ export const ItemListContainer = ({ titulo }) => {
         }else{
           setProducts(data);
         }  
-      })
+      })*/
+      getProducts(category)
+      .then((data) => setProducts(data))
       .catch((err) => {
         console.log(err);
       });
