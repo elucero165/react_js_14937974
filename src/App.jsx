@@ -9,7 +9,8 @@ import { Cart } from "./components/Cart/Cart";
 import { ProductFormContainer } from "./components/adminComponents/ProductFormContainer/ProductFormContainer";
 import {MainLayout} from "./layouts/MainLayout";
 import {AdminLayout} from "./layouts/AdminLayout";
-import { RutaProtegida } from "./components/RutasProtegida/RutaProtegida";
+import {RutaProtegida } from "./components/RutasProtegida/RutaProtegida";
+import { Login } from "./components/Login/Login";
 
 function App() {
   return (

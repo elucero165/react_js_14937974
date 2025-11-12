@@ -1,7 +1,8 @@
-import { Children } from "react";
-import { AuthContext } from "./AuthContext";
 
-export const AuthProvider = ({Children}) => {
+import { AuthContext } from "./AuthContext";
+import { useState } from "react";
+
+export const AuthProvider = ({children}) => {
     const [user, setUser] = useState(() =>{
         const saved = sessionStorage.getItem("session");
         if(saved){
@@ -29,7 +30,7 @@ export const AuthProvider = ({Children}) => {
 
     return (
         <AuthContext.Provider value={{user, login, logout}}>
-            {Children}
+            {children}
         </AuthContext.Provider>
     );
 }
