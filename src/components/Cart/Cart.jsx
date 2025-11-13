@@ -39,7 +39,7 @@ export const Cart = () => {
         </div>
       ) : (
         <Link className="btn" to="/">
-          Volver al inicio
+          
         </Link>
       )}
     </section>
