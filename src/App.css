@@ -1,18 +1,53 @@
-
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* ===== GENERAL ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  min-height: 100vh;
 }
 
+/* ===== ROOT CONTAINER ===== */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;          /* centra horizontalmente */
+  padding: 2rem 1rem;      /* margen interno adaptable */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;       /* garantiza altura completa */
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+main {
+  flex: 1;                 /* ocupa el espacio disponible entre header y footer */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  margin-top: auto;
+  border-top: 1px solid #ddd;
+  padding: 1rem 0;
+  color: #555;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+/* ===== LOGOS Y TARJETAS (mantengo tu estilo original) ===== */
 .logo {
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
